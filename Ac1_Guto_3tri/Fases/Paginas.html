@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões de Redirecionamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1>Caso queira voltar para alguma pagina, pode clicar nesses botões</h1>
+    <div class="button-container">
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/Fase1.html'"">Ir para Página 1</button>
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/fase2.html'"">Ir para Página 2</button>
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/fase3.html';">Ir para Página 3</button>
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/fase4.html';">Ir para Página 4</button>
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/fase5.html';">Ir para Página 5</button>
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/fase6.html';">Ir para Página 6</button>
+        <button onclick="window.location.href = 'file:///D:/Ac1_Guto_3tri/Fases/fase7.html';">Ir para Página 7</button>
+    </div>
+</body>
+</html>

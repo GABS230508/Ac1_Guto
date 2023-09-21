@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem e Texto</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+x
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FFC107;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.5s ease, background-color 0.3s;
+            outline: none;
+        }
+
+        button:hover {
+            transform: rotate(360deg);
+            background-color: #FFA000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entendendo o GRUB ou LILO </h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Apq2XVCUc9arpSDwGYwrgUZcEJRI1YtHlg&usqp=CAU" alt="Botão de Energia">
+        <p>Dependendo do sistema, esse bootloader pode ser o GRUB ou LILO, no caso do Linux; boot.efi, no caso dos Macs; ou Windows Boot Manager, para os sistemas Windows.
+             De qualquer forma, eles armazenam as instruções para carregar o sistema operacional respectivo, inicializando o carregamento completo até a tela de login.
+        </p>
+    </div>
+          <p><input type="button" onclick="execut()" value="Ir para a proxima etapa"></p>
+          <script>
+            function execut(){
+                window.location.href=`file:///D:/Ac1_Guto_3tri/Fases/fase6.html`
+            }
+          </script>
+</body>
+</html>
