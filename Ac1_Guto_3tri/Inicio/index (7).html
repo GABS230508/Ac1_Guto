@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ac1 Guto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FFC107;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.5s ease, background-color 0.3s;
+            outline: none;
+        }
+
+        button:hover {
+            transform: rotate(360deg);
+            background-color: #FFA000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo a Nossa Ac1!</h1>
+        <p>Por favor, digite seu nome para começar:</p>        
+        <input type="text" id="nome_do_jogador" placeholder="Seu Nome" required>
+        <br>
+        <button type="button" onclick="iniciarJogo()">Iniciar Programa</button>
+        <script>
+            function iniciarJogo() {
+                var nomeJogador = document.getElementById('nome_do_jogador').value;
+                if (nomeJogador.trim() !== "") {
+                    alert('Bem-vindo, ' + nomeJogador + '!');
+                    window.location.href = `file:///D:/Ac1_Guto_3tri/Fases/Fase1.html`;
+                } else {
+                    alert('Por favor, digite seu nome antes de iniciar o jogo.');
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

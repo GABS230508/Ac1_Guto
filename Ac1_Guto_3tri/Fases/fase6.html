@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem e Texto</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FFC107;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #FFA000;
+        }
+
+        .rotate {
+            animation: spin 1s linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entendendo a Area de Trabalho</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrly6ofjUMGVql8Ml0qN5hEnkaFiayempHX6DMQFZu&s" alt="Botão de Energia">
+        <p> Depois de tudo isso a Area de trabalho é carregada, é o usuario pode executar seus aplicativos
+            como por exemplo o chrome, Bing e etc...
+        </p>
+    </div>
+    
+    <p><button onclick="rotateAndNavigate()">Ir para a próxima etapa</button></p>
+    
+    <script>
+        function rotateAndNavigate() {
+            const button = document.querySelector("button");
+            button.classList.add("rotate"); 
+            setTimeout(() => {
+                window.location.href = `file:///D:/Ac1_Guto_3tri/Fases/fase7.html`;
+            }, 1000); 
+        }
+    </script>
+</body>
+</html>
